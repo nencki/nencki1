@@ -14,18 +14,21 @@ Tu wpisuje się treść strony
 		const number1 = parseInt(prompt('wprowadzi liczbe'));
 		const number2 = parseInt(prompt('wprowadzi liczbe'));
 
-		if (isNaN(number1))
-		{
-			document.write('wpisz poprawnie pierwszą liczbe');
+		
+		
+		while (isNaN(number1))
+		 {
+		const number1 = parseInt(prompt('wprowadzi liczbe'));
+		
 		}
-		else if (isNaN(number2))
+
+		while (isNaN(number1))
 		{
-			document.write('wpisz poprawnie drugą liczbe liczbe');
+		const number2 = parseInt(prompt('wprowadzi liczbe'));
 		}
-		else (isNaN(number2))
-		{
-			document.write('<p>wynik:'+(number1 + number2)+'</p>');	
-		}
+
+		document.write('<p>wynik:'+(number1 + number2)+'</p>');	
+		
 
 	</script>
 </body>
