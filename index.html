@@ -10,9 +10,22 @@
 Tu wpisuje się treść strony
 	<script>
 	document.write('Hello World');
-		
 
+		const number1 = parseInt(prompt('wprowadzi liczbe'));
+		const number2 = parseInt(prompt('wprowadzi liczbe'));
 
+		if (isNaN(number1))
+		{
+			document.write('wpisz poprawnie pierwszą liczbe');
+		}
+		else if (isNaN(number2))
+		{
+			document.write('wpisz poprawnie drugą liczbe liczbe');
+		}
+		else (isNaN(number2))
+		{
+			document.write('<p>wynik:'+(number1 + number2)+'/p');	
+		}
 
 	</script>
 </body>
