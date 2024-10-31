@@ -13,21 +13,40 @@ Tu wpisuje się treść strony
 	
 		
 		
-		while (isNaN(number1))
+	const number1 = parseInt(prompt('wprowadzi liczbe'));
+	const number2 = parseInt(prompt('wprowadzi liczbe'));
+	
+	
+	while  (znak != '+' || '-' || '*' || '/')
+	{
+
+	const znak = parseInt(prompt('wprowadzi znak'));
+	
+
+		if (znak == '+')
 		{
-		const number1 = parseInt(prompt('wprowadzi liczbe'));
-		
+			document.write('<p>wynik:'+(number1 + number2)+'</p>');	
 		}
-
-		
-		while (isNaN(number1))
+		else if (znak == '-')
 		{
-		const number2 = parseInt(prompt('wprowadzi liczbe'));
+			document.write('<p>wynik:'+(number1 - number2)+'</p>');	
 		}
-
-		document.write('<p>wynik:'+(number1 + number2)+'</p>');	
+		else if (znak == '*')
+		{
+			document.write('<p>wynik:'+(number1 * number2)+'</p>');	
+		}
+		else if (znak == '/')
+		{
+			document.write('<p>wynik:'+(number1 / number2)+'</p>');	
+		}
+		else
+		{
+			const znak = parseInt(prompt('wprowadzi znak'));
+		}
+		
 		
 
+	}
 	</script>
 </body>
 </html>
