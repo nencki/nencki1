@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="continer">
+        <header>
+            <h1>nagówek</h1>
+        </header>
+    <main>
+        <button>dodaj elemnt</button>
+    </main>
+    <footer>
+        <h2>footer</footer></h2>
+    </footer>
+    </div>
+    <script>
+        const btn = document.querySelector('button');
+        const display = document.querySelector('main');
+
+        btn.addEventListener('click', function(){
+            const newElement = document.createElement('p');
+            newElement.style.color = '#f00';
+            newElement.textContent='nowy elemet'
+            display.append(newElement);
+        });
+    </script>
+</body>
+</html>
